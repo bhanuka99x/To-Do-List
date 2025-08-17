@@ -92,3 +92,21 @@ ul li.list-item{
 ul li.list-item::before{
     background-image: url(images/checked.png);  
 }
+ul li span{
+    position: absolute ;
+    background: #9fa7ff;
+    border-radius: 50%;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #9fa7ff;
+    color: white;
+    border-radius: 50%;
+}   
