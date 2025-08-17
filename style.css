@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #04061d, #3a2c77);
+    padding: 10px;
+}
+.Todo-app{
+    background: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 20px 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 70px rgba(255, 255, 0, 0.4);
+}
+.Todo-app h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: #3a2c77;
+    margin-bottom: 20px;
+}
+.Todo-app h2 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(236, 236, 236);
+    border-radius: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 10px 50px;
+    background-color: #9fa7ff;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+}
+ul li.list-item{
+    color: #3a2c77;
+    text-decoration: line-through;
+}
+ul li.list-item::before{
+    background-image: url(images/checked.png);  
+}
